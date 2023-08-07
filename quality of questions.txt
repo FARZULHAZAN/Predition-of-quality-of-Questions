@@ -3,18 +3,18 @@ Problem statement: From given xml file predict the quality of the question using
 Data Extraction:Data has been extracted from the xml file and made a dataframe after that just droped nill values 
 
 Data Exploration: Drop unwanted columns like                'LastEditorDisplayName',
-                                                            'ClosedDate',
-                                                            'OwnerDisplayName',
-                                                            'LastEditorUserId',
-       									'AcceptedAnswerId',
-										'CommunityOwnedDate',
-										'ParentId',
-										'CommunityOwnedDate',
-										'OwnerUserId',
- 										'PostTypeId',
-										'LastActivityDate',
-										'LastEditDate',
-										'CreationDate'
+							    'ClosedDate',
+							    'OwnerDisplayName',
+							    'LastEditorUserId',
+							    'AcceptedAnswerId',
+							    'CommunityOwnedDate',
+							    'ParentId',
+							    'CommunityOwnedDate',
+							    'OwnerUserId',
+							    'PostTypeId',
+							    'LastActivityDate',
+							    'LastEditDate',
+							    'CreationDate'
 
 because it wont help to decide the quality of the question.Final Dataframe will be having the columns of Id,Score,ViewCount,Body,Title,Tags,AnswerCount,CommentCount,FavoriteCount but Score and AnswerCount made as a one column as Quality (0,1,2) for very low,low,Good qualities respectively (Y for the model). 
 And also change the datatypes for respective columns like for ID,CommentCount,FavoriteCount as int rest will be object .
